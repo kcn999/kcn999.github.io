@@ -1,0 +1,224 @@
+/* =========================================================
+   Base
+   ========================================================= */
+
+:root {
+    --background: #ffffff;
+    --text: #222222;
+    --muted: #666666;
+    --line: #d9d7d2;
+    --accent: #315a7d;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+
+    line-height: 1.7;
+}
+
+.language-switcher {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+
+    display: flex;
+    gap: 6px;
+
+    font-size: 0.85rem;
+}
+
+.language-switcher a {
+    color: var(--muted);
+    text-decoration: none;
+}
+
+.language-switcher a.active {
+    color: var(--text);
+    font-weight: 600;
+}
+
+.language-switcher span {
+    color: var(--line);
+}
+
+
+.timeline {
+    margin-top: 28px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 110px 210px 1fr;
+    column-gap: 12px;
+    padding: 5px 0;
+}
+
+.timeline-year {
+    color: var(--muted);
+}
+
+.timeline-role {
+    font-weight: 500;
+}
+
+.timeline-place {
+    color: var(--muted);
+}
+
+.timeline-note {
+    margin-left: 10px;
+    color: var(--muted);
+}
+
+.timeline-note a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.timeline-note a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* =========================================================
+   Header & Navigation
+   ========================================================= */
+
+.site-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 32px 0;
+}
+
+.site-nav {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid var(--line);
+}
+
+.site-name {
+    color: var(--text);
+    text-decoration: none;
+
+    font-size: 1.25rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: var(--muted);
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--text);
+}
+
+[data-language][hidden] {
+    display: none !important;
+}
+
+/* =========================================================
+   Main Content
+   ========================================================= */
+
+.main-content {
+    position: relative;
+   
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 32px 100px;
+}
+
+
+/* =========================================================
+   Identity
+   ========================================================= */
+
+.identity h1 {
+    margin: 0 0 12px;
+
+    font-size: 2.8rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.position {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.affiliation {
+    margin: 4px 0 0;
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+.links {
+    margin-top: 28px;
+}
+
+.links a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.links span {
+    margin: 0 8px;
+    color: var(--muted);
+}
+
+
+/* =========================================================
+   About
+   ========================================================= */
+
+.about {
+    margin-top: 50px;
+}
+
+.about h2 {
+    margin: 0 0 22px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--line);
+
+    font-size: 1.35rem;
+    font-weight: 500;
+}
+
+.about p {
+    max-width: 900px;
+    margin: 0 0 12px;
+}
+
